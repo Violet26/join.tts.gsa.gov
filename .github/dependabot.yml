@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: html-proofer
+    versions:
+    - 3.18.5
+    - 3.18.6
+    - 3.18.8
+    - 3.19.0
+  - dependency-name: activesupport
+    versions:
+    - 5.2.4.4
+    - 5.2.4.5
